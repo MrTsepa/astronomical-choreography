@@ -25,3 +25,4 @@ Let's see what we have
 
 ### Simple 2-body solution
 
+![](2-bodies.gif)
