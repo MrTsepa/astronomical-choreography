@@ -23,6 +23,19 @@ To investigate this question, see referenced literature:
 
 Let's see what we have
 
+Further for each case there will be three images:
+1. starting orbits
+2. process of learning, on plot you can see two types of lines:
+  - **solid lines** are for optimized trajectories, so for most part of the time they don't represent real gravitational moving
+  - **dot lines** are real trajectories from given starting positions and velocities of bodies (calculated with leapfrog method)
+    
+  that mean that we can consider our solution valid when this two types of lines overlap with each other
+3. resulting orbits and bodies moving along them
+
+For example see the simpliest case of 2 bodies
+
 ### Simple 2-body solution
 
-![](2-bodies.gif)
+![2-bodies_start.png](2-bodies_start.png)
+![2-bodies_evolution.gif](2-bodies_evolution.gif)
+![2-bodies.gif](2-bodies.gif)
