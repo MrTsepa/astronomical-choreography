@@ -38,10 +38,13 @@ For example see the simpliest case of 2 bodies
 ### Simple 2-body solution
 
 ![2-bodies_start.png](2-bodies_start.png)
+
 ![2-bodies_evolution.gif](2-bodies_evolution.gif)
 ![2-bodies.gif](2-bodies.gif)
 
 ### 3-body oval solution
+
+![3-bodies-oval_start.gif](3-bodies-oval_start.png)
 
 ![3-bodies-oval_evolution.gif](3-bodies-oval_evolution.gif)
 ![3-bodies-oval.gif](3-bodies-oval.gif)
