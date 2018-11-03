@@ -13,7 +13,9 @@ This work is an implemetation of method, proposed in article "Braids in classica
 
 ## Theory
 
-//TODO
+### What is variational principle
+
+I will start from afar and describe what matematicians call a variational principle. You probably know what a derivative is. It's well known also how one can find extremas (minimas and maximas) of a function knowing its derivative: they are all (mostly) points where derivative is 0. Generally this task is to find such <img src="https://latex.codecogs.com/gif.latex?x"/> that <img src="https://latex.codecogs.com/gif.latex?y=f(x)"/> is an extremum. But we will solve another task: instead of <img src="https://latex.codecogs.com/gif.latex?x"/> we will have functions and instead of regular function <img src="https://latex.codecogs.com/gif.latex?f(x)"/> we will have "second-order" function <img src="https://latex.codecogs.com/gif.latex?F(g)"/> that takes some function (lets just consider it as curve on coordinate plane) as an input and calculates one number as an output. Here comes variational task: find such curve <img src="https://latex.codecogs.com/gif.latex?g"/> where <img src="https://latex.codecogs.com/gif.latex?F(g)"/> will be minimal. I will not cover how this problem can be solved, just check out this [wikipedia page](https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation).
 
 To investigate this question, see referenced literature:
 - "Braids in classical gravity" by Cristopher Moore, 1993
