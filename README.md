@@ -15,9 +15,23 @@ This work is an implemetation of method, proposed in article "Braids in classica
 
 ### What is variational principle
 
-I will start from afar and describe what matematicians call a variational principle. You probably know what a derivative is. It's well known also how one can find extremas (minimas and maximas) of a function knowing its derivative: they are all (mostly) points where derivative is 0. Generally this task is to find such <img src="https://latex.codecogs.com/gif.latex?x"/> that <img src="https://latex.codecogs.com/gif.latex?y=f(x)"/> is an extremum. But we will solve another task: instead of <img src="https://latex.codecogs.com/gif.latex?x"/> we will have functions and instead of regular function <img src="https://latex.codecogs.com/gif.latex?f(x)"/> we will have "second-order" function <img src="https://latex.codecogs.com/gif.latex?F(g)"/> that takes some function (lets just consider it as curve on coordinate plane) as an input and calculates one number as an output. Here comes variational task: find such curve <img src="https://latex.codecogs.com/gif.latex?g"/> where <img src="https://latex.codecogs.com/gif.latex?F(g)"/> will be minimal. I will not cover how this problem can be solved, just check out this [wikipedia page](https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation).
+I will start from afar and describe what matematicians call a variational principle. You probably know about task of finding extremas of a function. Generally speaking this task is to find such <img src="https://latex.codecogs.com/gif.latex?x"/> that <img src="https://latex.codecogs.com/gif.latex?y=f(x)"/> is an extremum. Here is quite similiar task: instead of <img src="https://latex.codecogs.com/gif.latex?x"/> we will have functions and instead of regular function <img src="https://latex.codecogs.com/gif.latex?f(x)"/> we will have "second-order" function <img src="https://latex.codecogs.com/gif.latex?F(g)"/> that takes some function (lets just consider it as curve on coordinate plane) as an input and calculates one number as an output. Here comes variational task: find such curve <img src="https://latex.codecogs.com/gif.latex?g"/> where <img src="https://latex.codecogs.com/gif.latex?F(g)"/> will be minimal. I will not cover how this problem can be solved, just check out this [wikipedia page](https://en.wikipedia.org/wiki/Euler%E2%80%93Lagrange_equation).
 
-For further investigations, see referenced literature:
+### How it is connected to physics
+
+Well, that's very beautiful connection. It was discovered that mechanical laws (e.g. Newtown laws) can be derived from that principle. It turns out, that trajectory of a moving body **is** a such minimal curve. This happens when we define <img src="https://latex.codecogs.com/gif.latex?F(g)"/> as a special concept called *action*. Action <img src="https://latex.codecogs.com/gif.latex?S"/> is an integral over whole body path of another special concept called *Lagrangian* <img src="https://latex.codecogs.com/gif.latex?\mathcal{L}"/> which is actually just kinetic energy minus potential energy. Let's look on formulas.
+
+<img src="https://latex.codecogs.com/gif.latex?S(g)=\int_{t1}^{t2}\mathcal{L}(g(t))dt=\int_{t1}^{t2}(K(g(t))-U(g(t)))dt,"/>
+
+<img src="https://latex.codecogs.com/gif.latex?g_{real}=\min_{S}g."/>
+
+That's it. All you need to do is find such curve <img src="https://latex.codecogs.com/gif.latex?g"/> where action <img src="https://latex.codecogs.com/gif.latex?S"/> is minimal and it will be a real path. That's calles [Principle of least action](https://en.wikipedia.org/wiki/Principle_of_least_action).
+
+### What we do in this work
+
+In this work exactly this idea is used. We start from some approximate trajectories and then comupute <img src="https://latex.codecogs.com/gif.latex?\frac{dS}{dg}"/> to make gradient descent step and finally find appropriate trajectory.
+
+For complete formulas, see referenced literature:
 - "Braids in classical gravity" by Cristopher Moore, 1993
 - "New Orbits for the n-Body Problem" by Robert J. Vanderbei
 
